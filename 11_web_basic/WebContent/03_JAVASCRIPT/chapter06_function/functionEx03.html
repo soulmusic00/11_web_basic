@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>변수의 생명주기</title>
+<script>
+
+	var data = "최초데이터"; 				// 스크립트의 전역변수
+	console.log(data);
+	console.log("");
+	
+	function func1() {
+		
+		var func1Data = "함수1의 데이터";	// 함수1의 지역변수
+
+		console.log(data);			
+		console.log(func1Data);
+		//console.log(func2Data);
+		console.log("");
+		
+	}
+	
+	function func2() {
+		
+		var func2Data = "함수2의 데이터"; // 함수2의 지역변수
+		
+		console.log(data);			
+		//console.log(func1Data);
+		console.log(func2Data);
+		console.log("");
+		
+	}
+
+	func1();
+	func2();
+	
+	
+	// [참고] 생각해보기
+	var count1 = 1;
+	function test() {
+		var count2 = 1;
+		// test함수가 3번 호출되었을때 결과는?
+		count1++;
+		count2++;
+	}
+	
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

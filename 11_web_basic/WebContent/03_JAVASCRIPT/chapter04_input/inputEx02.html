@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>prompt</title>
+<script>
+	/*
+	
+		[형식]
+		
+		prompt("안내문자열","기본값");
+		
+		- 기본값은 생략가능하다.
+		- 기본 데이터 타입은 문자열이다.
+	
+	*/
+	
+	var getData1 = prompt("비밀번호를 입력하세요");
+	document.write(getData1, typeof getData1 , "<br>");
+	
+	var getData2 = prompt("사용 언어를 입력하세요" , "javascript");
+	document.write(getData2, typeof getData2 , "<br>");
+
+	var getHtmlGrade = prompt("html점수" , "0");
+	var getCssGrade = prompt("css점수" , "0");
+	var getJavascriptGrade = prompt("javascript점수" , "0");
+	
+	var totalGrade = Number(getHtmlGrade) + Number(getCssGrade) + Number(getJavascriptGrade);
+	
+	document.write("총점 : " + totalGrade);
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

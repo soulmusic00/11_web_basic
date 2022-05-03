@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>데이터의 형변환(casting)</title>
+<script>
+
+	/*
+	
+		# 자바스크립트의 형변환
+		
+		Number() : 글자 > 숫자 형변환
+		String() : 숫자 > 글자 형변환
+		
+		parseInt() : 글자 , 실수  > 정수 형변환
+		parseFloat() : 글자 > 실수 형변환
+		
+		toFixed() : 정수 > 실수 형변환
+	
+	*/
+
+	// 1) 정수 > 문자열
+	var nData = 43000;
+	var parseNData = String(nData);
+	
+	console.log(nData , typeof nData);
+	console.log(parseNData , typeof parseNData);
+	console.log("");
+	
+	
+	// 2) 문자열 > 정수	
+	var strData1 = "86000";
+	var parseStrData1 = Number(strData1);
+	
+	console.log(strData1 , typeof strData1);
+	console.log(parseStrData1 , typeof parseStrData1);
+	console.log("");
+	
+	
+	// 3) 실수 > 문자열
+	var fData = 3.14;
+	var parseFData = String(fData);
+	
+	console.log(fData , typeof fData);
+	console.log(parseFData , typeof parseFData);
+	console.log("");
+	
+	
+	// 4) 문자열 > 실수
+	var strData2 = "7.777";
+	var parseStrData2 = Number(strData2);
+	
+	console.log(strData2 , typeof strData2);
+	console.log(parseStrData2 , typeof parseStrData2);
+	console.log("");
+	
+	
+	// 5) 실수 > 정수
+	var nData2 = 3.14;
+	var parseNData2 = parseInt(nData2);
+	
+	console.log(nData2 , typeof nData2);
+	console.log(parseNData2 , typeof parseNData2);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
